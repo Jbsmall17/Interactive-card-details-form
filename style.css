@@ -1,0 +1,549 @@
+/* Font size */
+/* neutral colors */
+*, ::before, ::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 900px;
+  background-color: white;
+  background-image: url("images/bg-main-desktop.png");
+  background-position: left;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+}
+
+body main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+body main article {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+body main article.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+  padding: 0px 10px;
+}
+
+body main article.card .card-front {
+  width: 447px;
+  height: 245px;
+  position: relative;
+}
+
+body main article.card .card-front img {
+  width: 100%;
+  height: 100%;
+}
+
+body main article.card .card-front .opaque-circle {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+body main article.card .card-front .trans-circle {
+  position: absolute;
+  top: 50px;
+  left: 90px;
+  background-color: transparent;
+  width: 15px;
+  height: 15px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 50%;
+  border: 1px solid white;
+}
+
+body main article.card .card-front .card-details {
+  position: absolute;
+  bottom: 70px;
+  left: 25px;
+  color: white;
+  letter-spacing: 3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  font-size: 25px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body main article.card .card-front .card-holder {
+  position: absolute;
+  left: 25px;
+  bottom: 15px;
+  font-size: 18px;
+  color: white;
+}
+
+body main article.card .card-front .exp-date {
+  position: absolute;
+  right: 25px;
+  bottom: 15px;
+  font-size: 18px;
+  color: white;
+}
+
+body main article.card .card-back {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  width: 447px;
+  height: 245px;
+  position: relative;
+}
+
+body main article.card .card-back img {
+  width: 100%;
+  height: 100%;
+}
+
+body main article.card .card-back .cvr {
+  position: absolute;
+  right: 60px;
+  top: 45%;
+  color: white;
+}
+
+body main article.form-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main article.form-input form.form {
+  width: 370px;
+  height: auto;
+  gap: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body main article.form-input form.form > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 5px;
+}
+
+body main article.form-input form.form > div p {
+  color: red;
+  display: none;
+}
+
+body main article.form-input form.form > div label {
+  color: #21092f;
+}
+
+body main article.form-input form.form > div input {
+  padding: 6px 15px;
+  font-size: 18px;
+  border: 1px solid #dedddf;
+  border-radius: 7px;
+  width: 100%;
+}
+
+body main article.form-input form.form > div input::-webkit-input-placeholder {
+  color: #dedddf;
+}
+
+body main article.form-input form.form > div input:-ms-input-placeholder {
+  color: #dedddf;
+}
+
+body main article.form-input form.form > div input::-ms-input-placeholder {
+  color: #dedddf;
+}
+
+body main article.form-input form.form > div input::placeholder {
+  color: #dedddf;
+}
+
+body main article.form-input form.form > div input.wrong {
+  border: 1px solid #ff5252;
+}
+
+body main article.form-input form.form > div input.correct {
+  padding: 0.5rem;
+  border: double 1px transparent;
+  border-radius: 7px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(white)), -webkit-gradient(linear, right top, left top, from(#6448fe), to(#600594));
+  background-image: linear-gradient(white, white), linear-gradient(to left, #6448fe, #600594);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+}
+
+body main article.form-input form.form > div input:focus {
+  outline: none;
+}
+
+body main article.form-input form.form .card-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+body main article.form-input form.form .card-details .expire {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 5px;
+}
+
+body main article.form-input form.form .card-details .expire .sub-expire {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+}
+
+body main article.form-input form.form .card-details .expire input {
+  width: 40%;
+  height: 50px;
+  padding: 6px 15px;
+}
+
+body main article.form-input form.form .card-details .cvc {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 5px;
+}
+
+body main article.form-input form.form .card-details .cvc input {
+  width: 100%;
+  height: 50px;
+}
+
+body main article.form-input .thank-you-page {
+  display: none;
+  width: 370px;
+  text-align: center;
+}
+
+body main article.form-input .thank-you-page .circle {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#2828da), to(#6b2e6b));
+  background: linear-gradient(to bottom, #2828da, #6b2e6b);
+  margin: 30px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body main article.form-input .thank-you-page .circle .mark {
+  width: 20px;
+  height: 10px;
+  background: transparent;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-transform: rotate(-50deg);
+          transform: rotate(-50deg);
+  border-bottom: 2px solid white;
+  border-left: 2px solid white;
+}
+
+body main article.form-input .thank-you-page h3 {
+  color: #21092f;
+  margin-bottom: 15px;
+}
+
+body main article.form-input .thank-you-page p {
+  color: #dedddf;
+  margin-bottom: 30px;
+}
+
+body main button {
+  padding: 10px auto;
+  height: 50px;
+  font-size: 23px;
+  color: white;
+  border: none;
+  background-color: #21092f;
+  border-radius: 8px;
+  width: 100%;
+}
+
+@media screen and (max-width: 899px) {
+  body {
+    width: 100vw;
+    height: auto;
+    background-image: url("images/bg-main-mobile.png");
+    background-position: top left;
+    background-repeat: repeat-x;
+  }
+  body main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-bottom: 10px;
+    width: 100%;
+  }
+  body main article {
+    width: 100%;
+  }
+  body main article.card {
+    padding: 0px 0px;
+    gap: 0px;
+    position: relative;
+  }
+  body main article.card .card-front, body main article.card .card-back {
+    width: 55vw;
+    height: 28vh;
+  }
+  body main article.card .card-front {
+    z-index: 3;
+    position: absolute;
+    top: 20vh;
+    left: 5vw;
+    -webkit-box-shadow: 0 30px 15px 5px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 30px 15px 5px rgba(0, 0, 0, 0.1);
+  }
+  body main article.card .card-front .opaque-circle {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 45px;
+    height: 45px;
+  }
+  body main article.card .card-front .trans-circle {
+    position: absolute;
+    top: 40px;
+    left: 90px;
+    width: 15px;
+    height: 15px;
+  }
+  body main article.card .card-front .card-details {
+    bottom: 10vh;
+    left: 3.5vw;
+    font-size: 4vw;
+  }
+  body main article.card .card-front .card-holder {
+    bottom: 3vh;
+    left: 3.5vw;
+    font-size: 2.5vw;
+  }
+  body main article.card .card-front .exp-date {
+    bottom: 3vh;
+    right: 3.5vw;
+    font-size: 2.5vw;
+  }
+  body main article.card .card-back {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    position: absolute;
+    top: 5vw;
+    right: 5vw;
+  }
+  body main article.card .card-back .cvr {
+    position: absolute;
+    right: 15%;
+    font-size: 2.5vw;
+    top: 43.5%;
+    color: white;
+  }
+  body main article.form-input {
+    margin-top: 60vh;
+  }
+  body main article.form-input form.form {
+    width: 90vw;
+  }
+  body main article.form-input .thank-you-page {
+    display: none;
+    width: 90vw;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  body main article.card .card-front, body main article.card .card-back {
+    width: 65vw;
+    height: 25vh;
+    position: absolute;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  * {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  body {
+    width: 100vw;
+    height: auto;
+    background-image: url("images/bg-main-mobile.png");
+    background-position: top left;
+    background-repeat: repeat-x;
+  }
+  body main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-bottom: 10px;
+    width: 100%;
+  }
+  body main article {
+    width: 100%;
+  }
+  body main article.card {
+    padding: 0px 0px;
+    gap: 0px;
+    position: relative;
+  }
+  body main article.card .card-front, body main article.card .card-back {
+    width: 65vw;
+    height: 20vh;
+    position: absolute;
+  }
+  body main article.card .card-back {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    top: 5vw;
+    right: 5vw;
+  }
+  body main article.card .card-back .cvr {
+    position: absolute;
+    right: 15%;
+    font-size: 3.5vw;
+    top: 45%;
+    color: white;
+  }
+  body main article.card .card-front {
+    z-index: 3;
+    top: 14vh;
+    left: 5vw;
+    -webkit-box-shadow: 0 30px 15px 5px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 30px 15px 5px rgba(0, 0, 0, 0.1);
+  }
+  body main article.card .card-front .opaque-circle {
+    position: absolute;
+    top: 6vh;
+    left: 7vw;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 50%;
+  }
+  body main article.card .card-front .trans-circle {
+    position: absolute;
+    top: 6vh;
+    left: 16vw;
+    width: 12px;
+    height: 12px;
+  }
+  body main article.card .card-front .card-details {
+    bottom: 8vh;
+    left: 3.5vw;
+    font-size: 4vw;
+  }
+  body main article.card .card-front .card-holder {
+    bottom: 2vh;
+    left: 3.5vw;
+    font-size: 3.5vw;
+  }
+  body main article.card .card-front .exp-date {
+    bottom: 2vh;
+    right: 3.5vw;
+    font-size: 3.5vw;
+  }
+  body main article.form-input {
+    margin-top: 40vh;
+  }
+  body main article.form-input form.form {
+    width: 90vw;
+  }
+  body main article.form-input .thank-you-page {
+    display: none;
+    width: 90vw;
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=style.css.map */

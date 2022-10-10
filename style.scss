@@ -231,6 +231,11 @@ body{
         background-color: $Very-dark-violet;
         border-radius: 8px;
         width: 100%;
+         &:hover{
+          background-color: $white;
+          color:$Very-dark-violet;
+          border: 1px solid $Light-grayish-violet
+        }
       }
     }
   }

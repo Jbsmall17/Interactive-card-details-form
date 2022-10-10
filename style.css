@@ -342,6 +342,12 @@ body main button {
   width: 100%;
 }
 
+body main button:hover {
+  background-color: white;
+  color: #21092f;
+  border: 1px solid #dedddf;
+}
+
 @media screen and (max-width: 899px) {
   body {
     width: 100vw;
